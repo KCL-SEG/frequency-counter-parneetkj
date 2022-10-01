@@ -16,7 +16,3 @@ def frequencies(items):
                 items.remove(i)
 
     return frequencies
-
-
-a = ['0', 4, 4,'4','d','d','e',0,'a','d','4']
-print(frequencies(a))
