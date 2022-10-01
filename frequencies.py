@@ -3,5 +3,20 @@
 
 def frequencies(items):
     frequencies = {}
-    # Your code goes here
+
+    #makes all items in the list a string
+    items = [str(i) for i in items]
+
+    while len(items) > 0:
+        for i in items:
+            value = items.count(i);
+            frequencies.update({i : value})
+
+            while items.count(i) > 0:
+                items.remove(i)
+
     return frequencies
+
+
+a = ['0', 4, 4,'4','d','d','e',0,'a','d','4']
+print(frequencies(a))
